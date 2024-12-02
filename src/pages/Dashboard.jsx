@@ -67,11 +67,6 @@ const Dashboard = () => {
                         <p>Bác sĩ chuyên khoa Nhi.</p>
                     </div>
                 </div>
-
-                {/* Phần nội dung thêm vào */}
-                {/* <div className="content">
-                    <p>Đây là phần nội dung thêm vào để làm trang đẹp hơn.</p>
-                </div> */}
         </Layout>
     );
 };

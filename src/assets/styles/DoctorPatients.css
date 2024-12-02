@@ -1,0 +1,76 @@
+.doctor-patients {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.patients-list {
+    margin-top: 20px;
+}
+
+.patient-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.patient-card h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.patient-info {
+    padding-left: 20px;
+}
+
+.patient-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.patient-info strong {
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
