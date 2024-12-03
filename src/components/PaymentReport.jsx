@@ -65,8 +65,14 @@ const PaymentReport = () => {
         fetchReports();
     }, []); 
 
+    useEffect(() => {
+        console.log(treatmentReports);
+    }, [treatmentReports])
+
     return (
-        <div>
+        <div style={{
+            overflow: 'auto'
+        }}>
             <h3>Báo cáo khám và điều trị</h3>
 
             {/* Hiển thị lỗi nếu có */}
@@ -89,6 +95,7 @@ const PaymentReport = () => {
                                 <th>Tên thuốc</th>
                                 <th>Giá thuốc</th>
                                 <th>Mã Bệnh Nhân</th>
+                                <th>Tác Dụng Thuốc</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -104,6 +111,7 @@ const PaymentReport = () => {
                                     <td>{report.m_name}</td>
                                     <td>{report.m_price}</td>
                                     <td>{report.p_char}{report.p_code}</td>
+                                    <td>{report.effect}</td>
                                 </tr>
                             ))}
                         </tbody>
@@ -122,11 +130,11 @@ const PaymentReport = () => {
                                 <th>Ngày hết hạn thuốc</th>
                                 <th>Tên thuốc</th>
                                 <th>Giá thuốc</th>
-                                <th>Mã điều trị</th>
                                 <th>Ngày bắt đầu điều trị</th>
                                 <th>Ngày kết thúc điều trị</th>
                                 <th>Kết quả điều trị</th>
                                 <th>Mã Bệnh Nhân</th>
+                                <th>Tác Dụng Thuốc</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -136,12 +144,11 @@ const PaymentReport = () => {
                                     <td>{report.m_expiration_date}</td>
                                     <td>{report.m_name}</td>
                                     <td>{report.m_price}</td>
-                                    <td>{report.treat_code}</td>
                                     <td>{report.treat_start_date}</td>
                                     <td>{report.treat_end_date}</td>
                                     <td>{report.treat_result}</td>
                                     <td>{report.p_char}{report.p_number}</td>
-                                    <td>{report.p_code}</td>
+                                    <td>{report.effect}</td>
                                 </tr>
                             ))}
                         </tbody>
