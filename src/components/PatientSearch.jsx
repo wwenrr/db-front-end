@@ -103,6 +103,9 @@ const PatientSearch = () => {
                                         <p><strong>Ngày bắt đầu điều trị:</strong> {patient.treat_start_date}</p>
                                         <p><strong>Ngày kết thúc điều trị:</strong> {patient.treat_end_date}</p>
                                         <p><strong>Kết quả điều trị:</strong> {patient.treat_result}</p>
+                                        <p><strong>Đơn thuốc:</strong> {patient.m_name}</p>
+                                        <p><strong>Giá thuốc:</strong> {patient.m_price}</p>
+                                        <p><strong>Ngày hết hạn thuốc:</strong> {patient.m_expiration_date}</p>
                                     </>
                                 )}
                             </div>
