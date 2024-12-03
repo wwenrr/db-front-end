@@ -88,8 +88,7 @@ const PaymentReport = () => {
                                 <th>Ngày hết hạn thuốc</th>
                                 <th>Tên thuốc</th>
                                 <th>Giá thuốc</th>
-                                <th>Loại phiếu</th>
-                                <th>Mã phiếu</th>
+                                <th>Mã Bệnh Nhân</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -104,8 +103,7 @@ const PaymentReport = () => {
                                     <td>{report.m_expiration_date}</td>
                                     <td>{report.m_name}</td>
                                     <td>{report.m_price}</td>
-                                    <td>{report.p_char}</td>
-                                    <td>{report.p_code}</td>
+                                    <td>{report.p_char}{report.p_code}</td>
                                 </tr>
                             ))}
                         </tbody>
@@ -128,6 +126,7 @@ const PaymentReport = () => {
                                 <th>Ngày bắt đầu điều trị</th>
                                 <th>Ngày kết thúc điều trị</th>
                                 <th>Kết quả điều trị</th>
+                                <th>Mã Bệnh Nhân</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -141,6 +140,8 @@ const PaymentReport = () => {
                                     <td>{report.treat_start_date}</td>
                                     <td>{report.treat_end_date}</td>
                                     <td>{report.treat_result}</td>
+                                    <td>{report.p_char}{report.p_number}</td>
+                                    <td>{report.p_code}</td>
                                 </tr>
                             ))}
                         </tbody>
