@@ -78,6 +78,7 @@ const PatientSearch = () => {
                         <div key={index} className="patient-card">
                             <h4>Bệnh nhân {index + 1}</h4>
                             <div className="patient-info">
+                                <p><strong>Mã Bệnh Nhân:</strong> {patient.p_char}{patient.p_number}</p>
                                 <p><strong>Tên:</strong> {patient.p_first_name} {patient.p_last_name}</p>
                                 <p><strong>Giới tính:</strong> {patient.p_gender}</p>
                                 <p><strong>Ngày sinh:</strong> {patient.p_dob}</p>

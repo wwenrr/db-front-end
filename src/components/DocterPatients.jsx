@@ -88,6 +88,7 @@ const DoctorPatients = () => {
                                 <p><strong>Ngày sinh:</strong> {patient.p_dob}</p>
                                 <p><strong>Địa chỉ:</strong> {patient.p_address}</p>
                                 <p><strong>Số điện thoại:</strong> {patient.p_phone_number}</p>
+                                <p><strong>Mã Bệnh Nhân:</strong> {patient.p_char}{patient.p_number}</p>
                             </div>
                         </div>
                     ))
